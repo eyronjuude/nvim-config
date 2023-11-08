@@ -1,4 +1,5 @@
 require "plugins"
+require "keybindings"
 
 vim.opt.number = true
 vim.opt.relativenumber = true
@@ -12,25 +13,6 @@ vim.opt.encoding = 'utf-8'
 vim.o.guifont = 'JetBrains Mono:h11'
 
 vim.cmd[[colorscheme onedark]]
-
-vim.g.mapleader = ' '
-vim.keymap.set('n', '<Leader>e', ':NERDTreeToggle<CR>', {silent = true})
-vim.keymap.set('n', '<Leader>m', ':Mason<CR>', {silent = true})
-vim.keymap.set('n', '<Leader>c', ':bd!<CR>', {silent = true})
-vim.keymap.set('n', '<Leader>t', '<C-w>s<C-w>j:term<CR>10<C-w>-<S-a>', {silent = true})
-vim.keymap.set('n', '[b', ':bp<CR>', {silent = true})
-vim.keymap.set('n', ']b', ':bn<CR>', {silent = true})
-vim.keymap.set('n', '<C-h>', '<C-w>h', {silent = true})
-vim.keymap.set('n', '<C-l>', '<C-w>l', {silent = true})
-vim.keymap.set('n', '<C-j>', '<C-w>j', {silent = true})
-vim.keymap.set('n', '<C-k>', '<C-w>k', {silent = true})
-vim.keymap.set('n', 'j', 'gj', {silent = true})
-vim.keymap.set('n', 'k', 'gk', {silent = true})
-vim.keymap.set('n', '<C-a>', 'mpgg<S-V>G<Esc>`pzz', {silent = true})
-vim.keymap.set('t', '<Esc>', '<C-\\><C-n>', {silent = true})
-vim.keymap.set('t', '<C-j>', '<C-\\><C-n><C-w>j', {silent = true})
-vim.keymap.set('t', '<C-k>', '<C-\\><C-n><C-w>k', {silent = true})
-vim.keymap.set('n', '<F1>', ':edit $MYVIMRC<CR>', {silent = true})
 
 vim.g.NERDTreeDirArrowExpandable = '+'
 vim.g.NERDTreeDirArrowCollapsible = '~'
