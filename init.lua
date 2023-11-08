@@ -1,5 +1,5 @@
-require "plugins"
-require "keybindings"
+require('plugins')
+require('keybindings')
 
 vim.opt.number = true
 vim.opt.relativenumber = true
