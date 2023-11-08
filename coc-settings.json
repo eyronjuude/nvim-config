@@ -1,0 +1,10 @@
+"languageserver": {
+  "latex": {
+	"command": "/PATH/TO/texlab",
+	"filetypes": ["tex", "bib", "plaintex", "context"]
+  },
+  "typst": {
+    "command": "typst-lsp",
+    "filetypes": ["typst"]
+  }
+}
